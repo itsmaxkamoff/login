@@ -1,0 +1,155 @@
+
+.bg-blue {
+  background: linear-gradient(157.12deg, rgba(255, 255, 255, 0.8) 9.85%, #EFFAFF 98.93%);
+
+  .line hr {
+    border: 1.5px solid #E6EDF0;
+  }
+}
+
+.sign-up {
+  background-image: none !important;
+}
+
+.bg {
+  padding: 0 20px;
+  max-width: 900px;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+.carousel {
+  margin-top: -62%;
+  max-width: 900px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #52DBB7 !important;
+  height: 5px !important;
+  width: 5px !important;
+
+}
+
+.carousel-indicators li {
+  border-radius: 100% !important;
+}
+
+
+.carousel-inner {
+  padding-top: 100px;
+}
+
+.carousel-card {
+  width: 80%;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #FFEDED;
+  padding: 100px 40px 40px 40px;
+
+  .quote {
+    font-family: Serif;
+    font-size: 50px;
+    color: #FF7F7F;
+  }
+}
+
+.carousel-card h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00364F;
+  line-height: 45px;
+}
+
+.carousel-card h2 {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #00364F;
+}
+
+
+.carousel-inner .avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner .avatar img {
+  margin-bottom: -60px;
+  z-index: 9999;
+  max-width: 180px;
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 18px solid #ffffff;
+
+
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 3rem !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/icon/arrow-right.svg") !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/icon/arrow-left.svg") !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 20%;
+}
+
+.carousel-control-next {
+  padding-left: 30px;
+}
+
+.carousel-control-prev {
+  padding-right: 30px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+  .carousel-control-next, .carousel-control-prev {
+    display: none !important;
+
+  }
+
+  .carousel-card {
+    width: 90%;
+    background-color: #FFEDED;
+    padding: 70px 35px 35px 35px;
+
+    .quote {
+      font-size: 25px;
+    }
+
+    h4 {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 1900px) {
+  .carousel {
+    margin-top: -573px;
+  }
+}

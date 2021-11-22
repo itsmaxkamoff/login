@@ -1,0 +1,273 @@
+$color-brand: #52DBB7;
+$color-link: #19B5FE;
+$color-error: #842029;
+$color-warning: #664d03;
+@import "signup.css";
+@import "login.css";
+
+
+@font-face {font-family: 'Gilroy Bold';
+  src: url("../fonts/gilroy_bold.eot");
+  src: url("../fonts/gilroy_bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/gilroy_bold.woff2") format("woff2"),
+  url("../fonts/gilroy_bold.woff") format("woff"),
+  url("../fonts/gilroy_bold.ttf") format("truetype"),
+  url("../fonts/gilroy_bold.svg#Gilroy Black") format("svg");
+}
+@font-face {font-family: 'Gilroy Semibold';
+  src: url("../fonts/gilroy_semibold.eot");
+  src: url("../fonts/gilroy_semibold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/gilroy_semibold.ttf") format("truetype"),
+  url("../fonts/gilroy_semibold.svg#Gilroy Black") format("svg");
+}
+@font-face {font-family: 'Gilroy Medium';
+  src: url("../fonts/gilroy_medium.eot");
+  src: url("../fonts/gilroy_medium.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/gilroy_medium.ttf") format("truetype"),
+  url("../fonts/gilroy_medium.svg#Gilroy Black") format("svg");
+}
+@font-face {font-family: 'Gilroy Regular';
+  src: url("../fonts/gilroy_regular.eot");
+  src: url("../fonts/gilroy_regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/gilroy_regular.ttf") format("truetype"),
+  url("../fonts/gilroy_regular.svg#Gilroy Black") format("svg");
+}
+
+
+* {
+  font-family: "Gilroy", sans-serif;
+  color: #46626F;
+}
+
+
+.text-dark {
+  color: #00364F;
+}
+
+.text-brand {
+  color: $color-brand;
+;
+}
+
+
+.left {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  right: 0;
+  display: none;
+  background: url("../images/background/bg.png") no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: #00364F;
+    font-weight: bold;
+  }
+}
+
+.element {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.logo-brand {
+  max-width: 200px;
+}
+
+.form-validate {
+  max-width: 490px;
+}
+
+.brand-input {
+  position: relative;
+  margin-bottom: 1.25rem;
+
+  input {
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+  }
+
+  input[type="text"] {
+    background-image: url("../icon/user.svg");
+  }
+
+  input[type="email"] {
+    background-image: url("../icon/sms.svg");
+  }
+
+  input[type="password"] {
+    background-image: url("../icon/lock.svg");
+  }
+
+
+  .message-error, .message-warning {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .message-error {
+    color: $color-error;
+    background-color: #f8d7da;
+    border: 2px solid #f5c2c7;
+  }
+
+  .message-warning {
+    color: $color-warning;
+    background-color: #fff3cd;
+    border: 2px solid #ffecb5;
+  }
+
+
+  .form-control {
+    font-size: 14px;
+    padding-left: 50px;
+    border: 1.5px solid #E6EDF0;
+
+    &:focus, &:hover {
+      box-shadow: none !important;
+      border-color: $color-brand;
+    }
+
+
+    &::placeholder {
+      color: #97ADB8;
+    }
+
+
+  }
+
+  .form-check-input {
+    border-color: rgba(0, 0, 0, 0.1);
+
+
+    &:focus, &:hover, &:checked {
+      box-shadow: none !important;
+      border-color: $color-brand;
+      background-color: $color-brand;
+    }
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  .form-label {
+    font-weight: 600;
+
+    span {
+      color: red;
+      font-size: 20px;
+    }
+  }
+
+
+  .pass-icon {
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 57px;
+    right: 20px;
+
+    &.hidden {
+      background-image: url("../icon/eye-hidden.svg");
+    }
+
+    &.shown {
+      background-image: url("../icon/eye-shown.svg");
+    }
+  }
+
+
+}
+
+
+.brand-btn {
+  background-color: $color-brand;
+  border-color: $color-brand;
+  font-weight: 700;
+  font-size: 16px;
+
+  &:focus, &:hover {
+    background-color: #49c4a4;
+    border-color: #49c4a4;
+    box-shadow: none !important;
+
+  }
+}
+
+.form-control, .brand-btn {
+  height: 54px;
+  border-radius: 150px !important;
+  width: 100%;
+}
+
+
+#password, #password2 {
+  padding-right: 50px;
+}
+
+.brand-link {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: $color-link;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #46626F;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  hr {
+    border: 1.5px solid #E6EDF0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .right h1 {
+    font-size: 30px;
+  }
+
+}
+
+
+.form-control label span {
+  color: red;
+}
+

@@ -1,0 +1,170 @@
+@import url(signup.css);
+@import url(login.css);
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url("../fonts/gilroy_bold.eot");
+  src: url("../fonts/gilroy_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy_bold.woff2") format("woff2"), url("../fonts/gilroy_bold.woff") format("woff"), url("../fonts/gilroy_bold.ttf") format("truetype"), url("../fonts/gilroy_bold.svg#Gilroy Black") format("svg"); }
+@font-face {
+  font-family: 'Gilroy Semibold';
+  src: url("../fonts/gilroy_semibold.eot");
+  src: url("../fonts/gilroy_semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy_semibold.ttf") format("truetype"), url("../fonts/gilroy_semibold.svg#Gilroy Black") format("svg"); }
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url("../fonts/gilroy_medium.eot");
+  src: url("../fonts/gilroy_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy_medium.ttf") format("truetype"), url("../fonts/gilroy_medium.svg#Gilroy Black") format("svg"); }
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url("../fonts/gilroy_regular.eot");
+  src: url("../fonts/gilroy_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy_regular.ttf") format("truetype"), url("../fonts/gilroy_regular.svg#Gilroy Black") format("svg"); }
+* {
+  font-family: "Gilroy", sans-serif;
+  color: #46626F; }
+
+.text-dark {
+  color: #00364F; }
+
+.text-brand {
+  color: #52DBB7; }
+
+.left {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.right {
+  right: 0;
+  display: none;
+  background: url("../images/background/bg.png") no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .right h1 {
+    text-align: center;
+    color: #00364F;
+    font-weight: bold; }
+
+.element {
+  width: 100%; }
+  .element img {
+    width: 100%; }
+
+.logo-brand {
+  max-width: 200px; }
+
+.form-validate {
+  max-width: 490px; }
+
+.brand-input {
+  position: relative;
+  margin-bottom: 1.25rem; }
+  .brand-input input {
+    background-repeat: no-repeat;
+    background-position: left 20px center; }
+  .brand-input input[type="text"] {
+    background-image: url("../icon/user.svg"); }
+  .brand-input input[type="email"] {
+    background-image: url("../icon/sms.svg"); }
+  .brand-input input[type="password"] {
+    background-image: url("../icon/lock.svg"); }
+  .brand-input .message-error, .brand-input .message-warning {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500; }
+  .brand-input .message-error {
+    color: #842029;
+    background-color: #f8d7da;
+    border: 2px solid #f5c2c7; }
+  .brand-input .message-warning {
+    color: #664d03;
+    background-color: #fff3cd;
+    border: 2px solid #ffecb5; }
+  .brand-input .form-control {
+    font-size: 14px;
+    padding-left: 50px;
+    border: 1.5px solid #E6EDF0; }
+    .brand-input .form-control:focus, .brand-input .form-control:hover {
+      box-shadow: none !important;
+      border-color: #52DBB7; }
+    .brand-input .form-control::placeholder {
+      color: #97ADB8; }
+  .brand-input .form-check-input {
+    border-color: rgba(0, 0, 0, 0.1); }
+    .brand-input .form-check-input:focus, .brand-input .form-check-input:hover, .brand-input .form-check-input:checked {
+      box-shadow: none !important;
+      border-color: #52DBB7;
+      background-color: #52DBB7; }
+  .brand-input .form-check-label {
+    font-size: 14px; }
+  .brand-input .form-label {
+    font-weight: 600; }
+    .brand-input .form-label span {
+      color: red;
+      font-size: 20px; }
+  .brand-input .pass-icon {
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 57px;
+    right: 20px; }
+    .brand-input .pass-icon.hidden {
+      background-image: url("../icon/eye-hidden.svg"); }
+    .brand-input .pass-icon.shown {
+      background-image: url("../icon/eye-shown.svg"); }
+
+.brand-btn {
+  background-color: #52DBB7;
+  border-color: #52DBB7;
+  font-weight: 700;
+  font-size: 16px; }
+  .brand-btn:focus, .brand-btn:hover {
+    background-color: #49c4a4;
+    border-color: #49c4a4;
+    box-shadow: none !important; }
+
+.form-control, .brand-btn {
+  height: 54px;
+  border-radius: 150px !important;
+  width: 100%; }
+
+#password, #password2 {
+  padding-right: 50px; }
+
+.brand-link {
+  flex-direction: row;
+  display: flex;
+  justify-content: center; }
+  .brand-link a {
+    color: #19B5FE;
+    text-decoration: none;
+    transition: 0.3s ease-in-out; }
+    .brand-link a:hover {
+      color: black; }
+  .brand-link img {
+    margin-right: 10px; }
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #46626F;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+  .line hr {
+    border: 1.5px solid #E6EDF0; }
+
+@media (max-width: 768px) {
+  .right h1 {
+    font-size: 30px; } }
+.form-control label span {
+  color: red; }
+
+/*# sourceMappingURL=general.css.map */
